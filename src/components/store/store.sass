@@ -1,0 +1,50 @@
+.store
+    &__head
+        text-align: center
+        font-size: 32px
+        margin: 0
+    &__container
+        max-width: $width-container-default
+        margin: 0 auto
+        padding: 50px
+        +mq('sm')
+            padding: 0 20px
+            max-width: $width-container-sm
+    &__count
+        font-size: 28px
+        margin: 0
+    &__content
+        display: grid
+        grid-template-columns: 30% 30% 30%
+        gap: 50px
+    &__choose
+        display: flex
+        flex-direction: column
+        padding: 30px 20px
+        gap: 20px
+    &__choose-pay
+        color: $gold
+    &__choose-description
+        display: flex
+        flex-direction: column
+        gap: 10px
+        justify-content: center
+        align-items: center
+    &__buy
+        display: flex
+        flex-direction: row
+        gap: 10px
+        font-size: 24px
+        color: $black
+        background-color: $neon
+        font-family: $main-font
+        font-weight: bold
+        border: none
+        border-radius: 30px
+        align-items: center
+        padding: 15px
+        justify-content: center
+        cursor: pointer
+    &__cart-img
+        width: 30px
+        height: 30px

@@ -1,0 +1,58 @@
+.contacts
+    &__title
+        text-align: center
+        font-size: 28px
+        margin: 0 0 60px
+        +mq('xs')
+            margin: 20px 0
+    &__container
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: center
+        gap: 50px
+        +mq('xs')
+            flex-direction: column
+            gap: 30px
+            align-items: center
+    &__job
+        margin: 0
+        +mq('xs')
+            font-size: 14px
+        &_dev
+            text-align: end
+            +mq('xs')
+                text-align: start
+    &__name
+        margin: 0
+        +mq('xs')
+            font-size: 12px
+        &_dev
+            text-align: end
+            +mq('xs')
+                text-align: start
+    &__person
+        display: grid
+        max-width: 300px
+        grid-template-rows: 50px 30px auto 30px
+        +mq('xs')
+            max-width: 200px
+            font-size: 14px
+            gap: 5px
+            grid-template-rows: auto 20px auto 20px
+    &__avatar
+        width: 100%
+        max-width: 300px
+        +mq('xs')
+            max-width: 200px
+    &__connect
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 10px
+        opacity: 0.7
+        +mq('xs')
+            margin: 0
+            font-size: 12px

@@ -1,0 +1,27 @@
+// fonts
+$head-font: 'Press Start 2P';
+$main-font: 'Comfortaa', cursive;
+
+// colors
+$black: #000000;
+$white: #FFFFFF;
+$green: #123123;
+$main: #191C1F;
+$neon: #14c4c7;
+$block: #212529;
+$secondary: #87afac;
+$gold: #FFE477;
+$blue: #325aa8;
+$warning: #cf9518;
+
+// container
+$width-container-default: 1150px;
+$width-container-sm: 800px;
+
+$breakpoints: (
+  lg: 1280px,
+  md: 1100px,
+  sm: 920px,
+  s: 748px,
+  xs: 480px,
+);

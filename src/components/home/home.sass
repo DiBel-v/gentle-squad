@@ -1,0 +1,31 @@
+.home
+    color: $white
+    &__head
+        font-size: 28px
+        font-weight: 300
+        text-align: center
+        letter-spacing: 1px
+        margin-bottom: 60px
+        +mq('xs')
+            margin-bottom: 0
+    &__img-container
+        position: relative
+        margin-top: 50px
+        overflow: hidden
+        border-radius: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        +mq('xs')
+            margin-top: 10px
+    &__img
+        width: 100%
+        position: absolute
+    &__info
+        padding: 50px 100px
+        font-size: 18px
+        line-height: 24px
+        +mq('xs')
+            padding: 10px 20px
+    &__canvas
+        z-index: 2

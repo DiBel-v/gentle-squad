@@ -1,0 +1,93 @@
+.discord-block
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: 20px
+    padding: 10px 15px
+    background-color: $neon
+    border-radius: 10px
+    cursor: pointer
+    opacity: 0.8
+    &:hover
+        opacity: 0.6
+    +mq('sm')
+        padding: 5px 10px
+        gap: 10px
+    &__info-container
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        gap: 10px
+    &__link-container
+        display: flex
+        flex-direction: row
+        align-items: center
+        gap: 10px
+    &__text-contact
+        font-size: 20px
+        text-align: end
+        +mq('sm')
+            font-size: 14px
+        &_server
+            text-align: start
+    &__to-link
+        width: 25px
+        height: 25px
+        opacity: 0.6
+        +mq('sm')
+            width: 20px
+            height: 20px
+    &__discord-icon-container
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 65px
+        height: 65px
+        background-color: $black
+        border-radius: 10px
+        +mq('sm')
+            width: 50px
+            height: 50px
+    &__discord-icon
+        width: 50px
+        height: 50px
+        fill: $neon
+        +mq('sm')
+            width: 35px
+            height: 35px
+    &_footer
+        background: none
+        display: flex
+        justify-content: flex-start
+        gap: 10px
+        padding: 0
+        .discord-block
+            &__discord-icon-container
+                margin-left: 5px
+                order: 0
+                width: 55px
+                height: 55px
+                +mq('sm')
+                    width: 35px
+                    height: 35px
+            &__info-container
+                order: 1
+            &__to-link
+                order: 1
+            &__text-contact
+                order: 0
+                font-size: 14px
+                text-align: start
+                &_online
+                    color: $secondary
+                +mq('sm')
+                    font-size: 12px
+            &__discord-icon
+                width: 40px
+                height: 40px
+                fill: $main
+                +mq('sm')
+                    width: 25px
+                    height: 25px

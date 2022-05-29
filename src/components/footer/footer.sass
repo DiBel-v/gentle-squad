@@ -1,0 +1,87 @@
+.footer
+    background-color: $main
+    color: $white
+    margin-top: 50px
+    font-family: $main-font
+    &__container
+        max-width: $width-container-default
+        margin: 0 auto
+        padding: 50px
+        +mq('sm')
+            padding: 20px 30px
+            max-width: $width-container-sm
+    &__content
+        display: flex
+        flex-direction: row
+        justify-content: center
+        gap: 40px
+        +mq('s')
+            flex-direction: column
+    &__title
+        margin: 0 0 40px
+        +mq('s')
+            margin-bottom: 20px
+    &__join
+        flex: 1
+    &__links
+        flex: 1
+    &__support
+        flex: 1
+        display: flex
+        flex-direction: column
+    &__list
+        margin: 0
+        padding: 0
+        list-style: none
+        display: flex
+        flex-direction: column
+        gap: 10px
+    &__item
+        display: flex
+        flex-direction: row
+        align-items: center
+        gap: 10px
+        cursor: pointer
+        &:hover
+            transform: translateX(10px)
+            .footer
+                &__item-icon
+                    transform: rotate(0deg)
+    &__item-text
+        color: $secondary
+        text-decoration: none
+    &__item-icon
+        width: 15px
+        height: 15px
+        transform: rotate(-45deg)
+    &__info
+        color: $secondary
+    &__shop
+        margin-top: 20px
+        font-family: $main-font
+        border: none
+        border-radius: 30px
+        font-size: 16px
+        padding: 20px
+        background-color: $neon
+        font-weight: bold
+        justify-self: center
+        max-width: 180px
+        cursor: pointer
+    &__subfooter
+        margin-top: 50px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        gap: 20px
+        +mq('xs')
+            align-items: center
+    &__copyrights
+        color: $secondary
+        font-size: 12px
+        margin-bottom: 0
+    &__developed
+        max-width: 100px
+        line-height: 24px
+        +mq('xs')
+            font-size: 15px
