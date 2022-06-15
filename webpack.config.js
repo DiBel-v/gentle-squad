@@ -1,8 +1,10 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path');
+const { merge } = require("webpack-merge");
+const modeConfiguration = env => require(`./build-utils/webpack.${env}`);
 
-module.exports = () => {
+module.exports = ({ mode } = { mode: "production" }) => {
     const getPlugins = () => {
         const plugins = [
             new HTMLWebpackPlugin({
@@ -26,11 +28,12 @@ module.exports = () => {
         return ['style-loader', 'css-loader'];
     };
 
-    return {
-        mode: "development",
+    return merge({
+        mode,
         output: {
             filename: '[name].js',
-            path: path.resolve(__dirname, 'dist')
+            path: path.resolve(__dirname, 'dist'),
+            publicPath: '/'
         },
         module: {
             rules: [
@@ -90,7 +93,10 @@ module.exports = () => {
         devServer: {
             open: true,
             historyApiFallback: true,
+            hot: true,
             port: 8080
         }
-    }
+    },
+    modeConfiguration(mode)
+    )
 }
