@@ -9,7 +9,7 @@
     "webpack-dev-server": "webpack-dev-server",
     "start": "node server.js",
     "dev": "npm run webpack-dev-server -- --env mode=development",
-    "prod": "npm run webpack -- --env mode=production"
+    "build": "npm run webpack -- --env mode=production"
   },
   "proxy": "http://localhost:3000",
   "author": "",
